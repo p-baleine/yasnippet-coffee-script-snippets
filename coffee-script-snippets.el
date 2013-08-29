@@ -3,6 +3,6 @@
                                   (or (buffer-file-name) load-file-name)))
 
 ;; Load snippets
-(yas-load-directory coffee-script-snippets-root)
+(yas-load-directory (expand-file-name "snippets" coffee-script-snippets-root))
 
 (provide 'coffee-script-snippets)
